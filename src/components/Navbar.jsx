@@ -22,19 +22,19 @@ const Navbar = () => {
           <li className="active">
             <a href="#home">Home</a>
           </li>
-          <li className="active">
+          <li>
             <a href="#services">Services</a>
           </li>
-          <li className="active">
+          <li>
             <a href="#portfolio">Portfolio</a>
           </li>
-          <li className="active">
+          <li>
             <a href="#blog">Blog</a>
           </li>
-          <li className="active">
+          <li>
             <a href="#skills">Skills</a>
           </li>
-          <li className="active">
+          <li>
             <a href="#skills">Contact</a>
           </li>
         </ul>
@@ -60,6 +60,11 @@ const Nav = styled.nav`
       list-style-type: none;
       display: flex;
       gap: 3rem;
+      .active {
+        a {
+          border-bottom: 0.2rem solid var(--secondary-color);
+        }
+      }
       li {
         a {
           color: white;
